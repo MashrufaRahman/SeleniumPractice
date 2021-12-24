@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomeWork14.TestNGAnnotationMathod">
+      <class name="HomeWork14.Use_of_getCurrentUrl_method3">
         <methods>
           <include name="tearUp"/>
-          <include name="setUp"/>
-          <include name="urlTest"/>
+          <include name="getCurrentUrlTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- HomeWork14.TestNGAnnotationMathod -->
+      </class> <!-- HomeWork14.Use_of_getCurrentUrl_method3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
