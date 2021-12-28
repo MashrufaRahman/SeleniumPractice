@@ -8,7 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Use_of_clear_keys_enter_method {
+public class Use_of_clear_sendKeys_enter__getSize_method {
 	WebDriver driver;
 
 	@BeforeTest
