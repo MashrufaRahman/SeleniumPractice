@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  * 
  */
 
-public class Useing_of_alert_method_test {
+public class Useing_of_alert_method_test2 {
 	WebDriver driver;
 	
 	@BeforeTest
@@ -20,35 +20,33 @@ public class Useing_of_alert_method_test {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\mashr\\eclipse-workspace\\JavaSeleniumPractice\\driver\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get("https://play.google.com/store/apps/details?id=me.webalert&hl=en_US&gl=US");
+		driver.get("http://softwaretestingplace.blogspot.com/2017/03/javascript-alert-test-page.html");
 		Thread.sleep(3000);
 		
 	}
 	@Test(enabled = true,priority = 1)
 	public void alartInstall() throws InterruptedException {
-	driver.findElement(By.xpath("//button[text()='Install']")).click();
+	driver.findElement(By.xpath("//button[text()='Try it']")).click();
 	Thread.sleep(3000);
-	/*Alert alert = driver.switchTo().alert();
+	Alert alert = driver.switchTo().alert();
 	Thread.sleep(3000);
 	System.out.println(alert.getText());
 	alert.accept();
-	*/
 	
 	}
 	
-	@Test(enabled = false, priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void dismisAlertTest() throws InterruptedException {
-		driver.findElement(By.xpath("//button[text()='OK']")).click();
+		driver.findElement(By.xpath("//button[text()='Try it']")).click();
 		Thread.sleep(3000);
 		Alert alert = driver.switchTo().alert();
 		alert.dismiss();
 			
 		
 	}
-/*	
+	
 @AfterTest
 public void tearUp() {
 	driver.quit();
 }
-*/
 }
