@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomeWork15_Selenium.Use_of_clear_keys_enter_method">
+      <class name="HomeWork16.Useing_of_alert_method_test">
         <methods>
+          <include name="dismisAlertTest"/>
+          <include name="setUp"/>
           <include name="tearUp"/>
-          <include name="clear_maximize_and_getSize_test"/>
-          <include name="setup"/>
+          <include name="alartInstall"/>
         </methods>
-      </class> <!-- HomeWork15_Selenium.Use_of_clear_keys_enter_method -->
+      </class> <!-- HomeWork16.Useing_of_alert_method_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
